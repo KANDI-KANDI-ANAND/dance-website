@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dance Academy</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        section h1, section h2 {
+            margin-bottom: 15px;
+        }
+        .dance-styles {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .dance-style {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .dance-style img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+        .dance-styles {
+                flex-direction: column;
+                align-items: center;
+            }
+
+        .dance-style {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section h1 {
+                font-size: 1.5rem;
+            }
+
+        .dance-style {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#styles">Dance Styles</a></li>
+                <li><a href="#registration">Registration</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to the Dance Academy</h1>
+        <p>Join us to learn, grow, and perform in various dance styles. Our academy offers professional dance classes for all levels.</p>
+    </section>
+
+    <section id="styles">
+        <h2>Dance Styles We Offer</h2>
+        <div class="dance-styles">
+            <div class="dance-style">
+                <img src="WhatsApp Image 2025-02-25 at 15.59.10.jpeg" alt="Ballet">
+                <h3>Ballet</h3>
+                <p>Elegant and graceful dance style with rigorous technique.</p>
+            </div>
+            <div class="dance-style">
+                <img src="WhatsApp Image 2025-02-25 at 16.00.05.jpeg" alt="Hip Hop">
+                <h3>Hip Hop</h3>
+                <p>Energetic and street-style dance, full of attitude and creativity.</p>
+            </div>
+            <div class="dance-style">
+                <img src="WhatsApp Image 2025-02-25 at 16.01.07.jpeg" alt="Salsa">
+                <h3>Salsa</h3>
+                <p>Fun and fast-paced Latin dance full of rhythm and passion.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="registration">
+        <h2>Register for Dance Classes</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="phone" placeholder="Phone Number" required>
+            <select required>
+                <option value="">Select Dance Style</option>
+                <option value="ballet">Ballet</option>
+                <option value="hip-hop">Hip Hop</option>
+                <option value="salsa">Salsa</option>
+            </select>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to ask me!</p>
+        <p>Phone Number: <strong>+91 123</strong></p>
+        <p>Email: <strong>contact@danceacademy.com</strong></p>
+    </section>
+    <footer>
+        <p>© 2025 Dance Academy. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
